@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dialog</string>
+    <string name="login">Login</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+</resources>

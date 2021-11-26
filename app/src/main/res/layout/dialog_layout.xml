@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTitleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:drawableStartCompat="@drawable/drawable_left"
+        app:drawableTint="@color/white" />
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#60ffffff"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="#5C5C5C"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:hint="@string/username"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:paddingStart="16dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#60ffffff"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="#5C5C5C"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:paddingStart="16dp" />
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp" >
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="@string/login"
+            android:textSize="18sp"
+            android:textColor="#2196F3"
+            android:fontFamily="sans-serif-medium"
+            app:cornerRadius="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="@string/cancel"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            android:textColor="#2196F3"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:backgroundTint="@color/white" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
